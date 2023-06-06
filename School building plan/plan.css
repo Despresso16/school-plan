@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 2s;
+}
+
+body {
+    display: flex;
+    justify-content: start;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    
+}
+nav a, nav h1 {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: Helvetica;
+}
+
+nav h1 {
+    margin: 5px;
+    font-size: 50px;
+    text-align: center;
+}
+
+nav {
+    
+    position: fixed;
+    transform: translateX(-29vw);
+    width: 30%;
+    max-width: 30%;
+    height: 100vh;
+    
+    border-right: 2px solid white;
+    background-color: black;
+    background-image: linear-gradient(to top, rgb(0, 0, 61), black); 
+}
+
+nav:hover, nav:active {
+    animation-name: nav-pull;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    transition: 2s ease-out;
+    transform: translateX(0);
+
+}
+@keyframes nav-pull {
+    0% {
+        transform: translateX(-29vw); 
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.nav-head {
+    display: flex;
+    justify-content: center;
+}
+.nav-head img {
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+}
+nav ul {
+    margin: 10px;
+}
+nav li {
+    list-style: none;
+    height: 50px;
+    border: 2px solid white;
+    margin-bottom: 5px;
+    
+    text-align: center;
+    
+}
+nav a li:not(.active):hover, nav u li:not(.active):active {
+    animation-name: select;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    transition: 1s ease-out;
+    background-color: white;
+    color: black;
+}
+@keyframes select {
+    0% {
+        background-color: transparent;
+        color: white;
+    }
+    100% {
+        background-color: white;
+        color: black;
+    }
+    
+
+}
+.active {
+    
+    background-color: white;
+    color: black;
+}
+
+main {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 90vw;
+    height: 100vh;
+    
+    
+}
+
+main h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.map img {
+    width: 90%;
+}
+@media only screen and (max-width: 992px) {
+    * {
+        margin: 0;
+        padding: 0;
+        transition: 2s;
+        
+    }
+    
+    body {
+        display: flex;
+        justify-content: start;
+        background-color: black;
+        color: white;
+        overflow-x: hidden;
+        
+    }
+    nav a, nav h1 {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: Helvetica;
+    }
+    
+    nav h1 {
+        margin: 5px;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    nav {
+        
+        position: fixed;
+        transform: translateX(-28vw);
+        width: 30%;
+        max-width: 30%;
+        height: 100vh;
+        
+        border-right: 2px solid white;
+        background-color: black;
+        background-image: linear-gradient(to top, rgb(0, 0, 61), black); 
+    }
+    
+    nav:hover, nav:active {
+        animation-name: nav-pull;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        transition: 2s ease-out;
+        transform: translateX(0);
+    
+    }
+    @keyframes nav-pull {
+        0% {
+            transform: translateX(-29vw); 
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    .nav-head {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-head img {
+        width: 50%;
+        height: 50%;
+        margin: 10px;
+    }
+    nav ul {
+        margin: 10px;
+    }
+    nav li {
+        list-style: none;
+        height: 40px;
+        border: 2px solid white;
+        margin-bottom: 5px;
+        
+        text-align: center;
+        
+    }
+    nav a li:not(.active):hover, nav u li:not(.active):active {
+        animation-name: select;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        transition: 1s ease-out;
+        background-color: white;
+        color: black;
+    }
+    @keyframes select {
+        0% {
+            background-color: transparent;
+            color: white;
+        }
+        100% {
+            background-color: white;
+            color: black;
+        }
+        
+    
+    }
+    .active {
+        
+        background-color: white;
+        color: black;
+    }
+    
+    main {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+        height: 100vh;
+        
+        
+    }
+    
+    main h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        
+    }
+    .map {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .map img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        transition: 2s;
+        
+        
+        
+    }
+    
+    body {
+        display: flex;
+        justify-content: start;
+        background-color: black;
+        color: white;
+        overflow-y: hidden;
+        
+    }
+    nav a, nav h1 {
+        color: white;
+        text-decoration: none;
+        font-size: 23px;
+        font-family: Helvetica;
+    }
+    
+    nav h1 {
+        margin: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    nav {
+        
+        position: fixed;
+        transform: translateX(-27vw);
+        width: 30%;
+        max-width: 30%;
+        height: 100vh;
+        
+        border-right: 2px solid white;
+        background-color: black;
+        background-image: linear-gradient(to top, rgb(0, 0, 61), black); 
+    }
+    
+    nav:hover, nav:active {
+        animation-name: nav-pull;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        transition: 2s ease-out;
+        transform: translateX(0);
+    
+    }
+    @keyframes nav-pull {
+        0% {
+            transform: translateX(-28vw); 
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    .nav-head {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-head img {
+        width: 50%;
+        height: 50%;
+        margin: 10px;
+    }
+    nav ul {
+        margin: 10px;
+    }
+    nav li {
+        list-style: none;
+        height: 30px;
+        border: 2px solid white;
+        margin-bottom: 5px;
+        
+        text-align: center;
+        
+    }
+    nav a li:not(.active):hover, nav u li:not(.active):active {
+        animation-name: select;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        transition: 1s ease-out;
+        background-color: white;
+        color: black;
+    }
+    @keyframes select {
+        0% {
+            background-color: transparent;
+            color: white;
+        }
+        100% {
+            background-color: white;
+            color: black;
+        }
+        
+    
+    }
+    .active {
+        
+        background-color: white;
+        color: black;
+    }
+    
+    main {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+        height: 100vh;
+        
+        
+    }
+    
+    main h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        
+    }
+    .map {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .map img {
+        width: 111%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+    * {
+        margin: 0;
+        padding: 0;
+        transition: 2s;
+        
+        
+        
+    }
+    
+    body {
+        display: flex;
+        justify-content: start;
+        background-color: black;
+        color: white;
+        overflow-x: hidden;
+        
+    }
+    nav a, nav h1 {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Helvetica;
+    }
+    
+    nav h1 {
+        margin: 5px;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    nav {
+        
+        position: fixed;
+        transform: translateX(-26vw);
+        width: 30%;
+        max-width: 30%;
+        height: 100vh;
+        
+        border-right: 2px solid white;
+        background-color: black;
+        background-image: linear-gradient(to top, rgb(0, 0, 61), black); 
+    }
+    
+    nav:hover, nav:active {
+        animation-name: nav-pull;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        transition: 2s ease-out;
+        transform: translateX(0);
+    
+    }
+    @keyframes nav-pull {
+        0% {
+            transform: translateX(-28vw); 
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    .nav-head {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-head img {
+        width: 50%;
+        height: 50%;
+        margin: 10px;
+    }
+    nav ul {
+        margin: 10px;
+    }
+    nav li {
+        list-style: none;
+        height: 25px;
+        border: 2px solid white;
+        margin-bottom: 5px;
+        
+        text-align: center;
+        
+    }
+    nav a li:not(.active):hover, nav u li:not(.active):active {
+        animation-name: select;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        transition: 1s ease-out;
+        background-color: white;
+        color: black;
+    }
+    @keyframes select {
+        0% {
+            background-color: transparent;
+            color: white;
+        }
+        100% {
+            background-color: white;
+            color: black;
+        }
+        
+    
+    }
+    .active {
+        
+        background-color: white;
+        color: black;
+    }
+    
+    main {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+        height: 100vh;
+        
+        
+    }
+    
+    main h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        
+    }
+    .map {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .map img {
+        width: 111%;
+    }
+}
